@@ -1,0 +1,19 @@
+//librerias
+import React from 'react';
+import {
+    Route,
+    Switch
+} from 'react-router-dom';
+//componentes
+import App from './App';
+import AppHome from './Components/Home/AppHome';
+import AppPageError from './Components/Error/AppPageError';
+
+const AppRouters = ()=><App>
+         <Switch>
+            <Route exact path = "/" component = {AppHome} /> 
+            <Route  component = {AppPageError}/>
+        </Switch>
+</App>
+
+export default AppRouters;

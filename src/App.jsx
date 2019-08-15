@@ -6,7 +6,7 @@ import AppCavecera from './Components/Header/AppCavecera';
 function App({children}) {
   return ( <div className = "App"  >
   <AppCavecera />
-    <div  class="container">
+    <div  className="container">
         {children}
       </div>
     </div>

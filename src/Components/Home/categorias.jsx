@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import ObtenerCategoorias from "../../Conections/categorias";
 //componentes
 import AppCategoria from "./categoria";
+//css
+require('./style/estilos_categorias.css');
 
 const AppCategorias = ({ setCategoria, idCategoria }) => {
   //estado
@@ -23,27 +25,7 @@ const AppCategorias = ({ setCategoria, idCategoria }) => {
     );
 
   return (
-    <nav
-      className="row"
-      style={{
-        height: "100px",
-        background:"#FFF",
-        position:"absolute",
-        left:0,
-        right:0
-      }}
-    >
-      <div className="col-sm-1">
-        <i
-          className="fa fa-angle-left"
-          style={{ zIndex: "9999", position: "absolute", fontSize: "40px" }}
-        />
-      </div>
-      <div className="col-sm-10" style={{
-        overflowX:"auto",
-        height:100,
-
-        }}>
+    <nav className="categorias ">
       {categorias.map(cat => (
         <AppCategoria
           value={cat}
@@ -52,13 +34,6 @@ const AppCategorias = ({ setCategoria, idCategoria }) => {
           key={cat.nombre}
         />
       ))}
-      </div>
-      <div className="col-sm-1">
-        <i
-          className="fa fa-angle-right"
-          style={{ zIndex: "9999", position: "absolute", fontSize: "40px" }}
-        />
-      </div>
     </nav>
   );
 };

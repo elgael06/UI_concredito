@@ -8,7 +8,7 @@ const AppAnuncio=()=>{
    anuncio.id || ObtenerAnuncios(setAnuncio,()=>console.log("Error..."))
 return <div className="row">
         <a href={anuncio.link}>
-            <img style={{width:"100%",position:"static",marginTop:102}} src={anuncio.imagenComputadora} alt="Anuncio." /> 
+            <img style={{width:"100%",position:"static",marginTop:112}} src={anuncio.imagenComputadora} alt="Anuncio." /> 
         </a>
     </div>;
 }

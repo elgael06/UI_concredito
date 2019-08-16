@@ -1,0 +1,17 @@
+.categorias{
+    float: left;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 0 rgba(152,162,173,.7);
+    padding: 8px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.categorias:-webkit-scrollbar {
+    display: none;
+  }

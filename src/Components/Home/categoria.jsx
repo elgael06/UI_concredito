@@ -8,7 +8,7 @@ const AppCategoria = ({ value, state, setSeleccionada }) => {
   return (
     <Link to={`/categoria/${id}`}>
       <div
-        onClick={() => setSeleccionada(value)}
+        onClick={setSeleccionada}
         style={{
           width: "137px",
           height: "80px",

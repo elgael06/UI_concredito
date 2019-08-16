@@ -6,7 +6,7 @@ const AppProductos = ({ productos }) => {
 
      
   return (
-    <div className="row p-3">
+    <div className="row p-3" style={{marginTop:102}}>
       {productos.map(prod => (
         <AppProducto producto={prod} key={prod.id} />
       ))}

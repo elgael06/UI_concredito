@@ -4,7 +4,7 @@ import React from 'react';
 import AppCavecera from './Components/Header/AppCavecera';
 
 function App({children}) {
-  return ( <div className = "App"  >
+  return ( <div className = "App" style={{background:"#f5f5f5"}}  >
   <AppCavecera />
     <div  className="container">
         {children}

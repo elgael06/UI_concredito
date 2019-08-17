@@ -1,4 +1,6 @@
+//libreria
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const AppProducto =({producto})=>{
     //variable
@@ -6,7 +8,7 @@ const AppProducto =({producto})=>{
         <del>${producto.precioOriginal}</del> <b className="text-danger">${producto.precioDescuento}</b></div>
     :<i className="p-1" style={{fontSize:12}}>${producto.precioOriginal}</i> 
 
-    return<div className="col-sm-3 p-3">
+    return<Link to={`/producto/${producto.id}`} className="col-sm-3 p-3">
         <div className="card">
             {!producto.mostrarDescuento ||
             <i style={{width:60,borderTopLeftRadius:0,borderBottomLeftRadius:0,position:"absolute",marginTop:1}} className="p-2 badge badge-pill badge-danger">Oferta</i>}
@@ -24,7 +26,7 @@ const AppProducto =({producto})=>{
                <span className="card-text" style={{fontSize:10,height:"30px"}}> a {producto.plazoDefecto} quincenas.</span>
             </div>
         </div>
-    </div>
+    </Link>
 }
 
 export default AppProducto;
